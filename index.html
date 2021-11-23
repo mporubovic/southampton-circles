@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="output"></canvas>
+    <video id="player"></video>
+    <div id="controls">
+        <div id="capture">CAPTURE</div>
+        <div id="reset">RESET</div>
+    </div>
+
+</body>
+<script src="https://docs.opencv.org/master/opencv.js"></script>
+<script src="main.js"></script>
+</html>
+
+<script>
+</script>
+
+
+<style>
+
+html, * {
+    margin: 0;
+    font-family: Helvetica;
+}
+
+#player {
+    position: fixed;
+    z-index: 1;
+}
+
+#output {
+    position: fixed;
+    z-index: 20;
+}
+
+#controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100px; */
+    /* height: 20px; */
+
+    z-index: 30;
+}
+
+#capture, #reset {
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    user-select: none;
+}
+
+
+</style>
